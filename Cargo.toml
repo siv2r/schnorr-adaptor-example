@@ -1,0 +1,13 @@
+[package]
+name = "schnorr-adaptor-example"
+version = "0.1.0"
+authors = ["Sivaram Dhakshinamoorthy <siv2ram@gmal.com>"]
+license = "CC0-1.0"
+description = "Example demonstrating the Schnorr adaptor module in `rust-libsecp256k1-zkp` library."
+keywords = [ "crypto", "Schnorr", "adaptor signatures", "secp256k1-zkp", "libsecp256k1-zkp"]
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+bitcoin_hashes = "0.16.0"
+secp256k1-zkp = { git = "https://github.com/siv2r/rust-secp256k1-zkp.git", branch = "schnorr-adaptor-bindings", features = ["rand-std"] }
